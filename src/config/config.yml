@@ -1,0 +1,42 @@
+---
+# This File should NOT be added to Git.
+# Should only be copied from external source when deployment
+# It is added here for demonstration purposes
+  db:
+    conn: 'mongodb://127.0.0.1/bimbangal'
+    name: 'bimbangal'
+    host: '127.0.0.1'
+    port: 27017
+    alias: 'bimbam'
+  redis:
+    host: '127.0.0.1'
+    port: 6379
+    db: 0
+    setname: 'block_words'
+  api:
+    unsplash:
+      base_url: 'https://api.unsplash.com/search/photos'
+      params:
+        query: 'term'
+        client_id: '42992190cc1f19e7a322250b9d75790d103019537557d27e9668fa35d02a22a7'
+        per_page: 30
+      response:
+        dict_key: 'photos'
+    pexels:
+      base_url: 'https://api.pexels.com/v1/search'
+      params:
+        query: 'term'
+        per_page: 30
+        page: 1
+      headers:
+        authorization: '563492ad6f91700001000001c2ba80ecc958472b85e060d468c8bbab'
+      response:
+        dict_key: 'photos'
+  gunicorn:
+    bind: '127.0.0.1:5000'
+    workers: 1
+    timeout: 30
+  #Support for Windows
+  waitress:
+    host: '127.0.0.1'
+    port: 5000
