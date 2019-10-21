@@ -35,7 +35,7 @@ setup(
         'redis==2.10.6',
         'requests==2.19.1',
         'six==1.11.0',
-        'urllib3==1.23',
+        'urllib3==1.24.2',
         'waitress==1.1.0',
         'walrus==0.5.1'
     ],
