@@ -36,7 +36,7 @@ setup(
         'requests==2.19.1',
         'six==1.11.0',
         'urllib3==1.23',
-        'waitress==1.1.0',
+        'waitress==2.1.1',
         'walrus==0.5.1'
     ],
     package_data={},
