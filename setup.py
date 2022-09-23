@@ -28,7 +28,7 @@ setup(
         'chardet==3.0.4',
         'idna==2.7',
         'mongoengine==0.15.3',
-        'protobuf==3.6.0',
+        'protobuf==3.18.3',
         'pymongo==3.7.1',
         'python-dotenv==0.8.2',
         'python-mimeparse==1.6.0',
