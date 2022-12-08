@@ -24,7 +24,7 @@ setup(
         'gunicorn==19.6.0',
         'aumbry[yaml]==0.7.0',
         'docopt==0.6.2',
-        'certifi==2018.4.16',
+        'certifi==2022.12.7',
         'chardet==3.0.4',
         'idna==2.7',
         'mongoengine==0.15.3',
